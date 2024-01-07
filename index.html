@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Super Star</title>
+    <link rel="stylesheet" href="/style/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/asset/Logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    .nav-link {
+        color: white !important;
+        font-family: "Ubuntu", sans-serif !important;
+    }
+
+    .navbar-brand {
+        color: #f4c530 !important;
+        font-weight: 900 !important;
+        margin-top: -1.5% !important;
+        font-size: 30px !important;
+        font-family: "Ubuntu", sans-serif !important;
+        letter-spacing: 1.5px !important;
+        margin-left: 5% !important;
+    }
+
+    .navbar-collapse {
+        margin-left: 17% !important;
+        margin-top: -1.5% !important;
+    }
+
+    .nav-link {
+        padding: 30px !important;
+        font-size: 17px !important;
+    }
+
+    .carousel-inner {
+        width: 80% !important;
+        height: 100;
+        margin-left: 10.2% !important;
+        margin-top: 25px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 0 10px white !important;
+    }
+
+    .btn-outline-warning {
+        outline: #f4c530 !important;
+        border: 3px solid #f4c530 !important;
+        font-family: "Ubuntu", sans-serif !important;
+        color: white !important;
+        margin-top: 0% !important;
+    }
+
+    .navbar-toggler {
+        background-color: whitesmoke !important;
+    }
+
+    .card {
+        width: 70% !important;
+        text-align: center !important;
+        margin-top: 5% !important;
+    }
+
+    .card-body {
+        font-size: 14px !important;
+    }
+
+    .card-header {
+        font-family: "Ubuntu", sans-serif !important;
+        color: #f4c530 !important;
+        font-weight: 900 !important;
+    }
+
+    .card-title {
+        color: #f4c530 !important;
+        font-family: "Poppins", sans-serif !important;
+        font-size: 12px !important;
+    }
+
+    .card-text {
+        color: grey !important;
+        font-family: "Nunito", sans-serif !important;
+    }
+
+    .card-info {
+        border: 3px solid #f4c530 !important;
+        box-shadow: 0 0 20px grey !important;
+    }
+
+    .card-info2 {
+        border: 3px solid #f4c530 !important;
+        box-shadow: 0 0 20px grey !important;
+    }
+
+    .card-header-1 {
+        color: white !important;
+    }
+
+    .card-angkatan-23 {
+        background-color: #f4c530 !important;
+        border: 1.5px solid white !important;
+        box-shadow: 0 0 10px grey !important;
+    }
+
+    .table-1 {
+        width: 79% !important;
+        font-size: 12px !important;
+        margin-top: 5% !important;
+        text-align: center !important;
+    }
+
+    .table-2 {
+        width: 79% !important;
+        font-size: 12px !important;
+        margin-top: 3% !important;
+        text-align: center !important;
+    }
+
+    .table-group-divider {
+        font-family: "Ubuntu", sans-serif !important;
+        text-align: center !important;
+        font-weight: 900;
+    }
+
+    tr,
+    th,
+    td {
+        background-color: grey !important;
+        outline: none !important;
+    }
+
+    .btn-1 {
+        width: 75px !important;
+        height: 30px;
+        font-size: 8px !important;
+        color: #f4c530 !important;
+        border: 3px solid #f4c530 !important;
+        text-align: center !important;
+        font-weight: 900 !important;
+    }
+
+    .card-angkatan-24 {
+        margin-top: -1px !important;
+        background-color: #f4c530 !important;
+        border: 1.5px solid white !important;
+        box-shadow: 0 0 10px grey !important;
+    }
+
+    .card-header-2 {
+        color: white !important;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        font-family: 'Ubuntu', sans-serif !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+    }
+
+    .A-F {
+        margin-top: 20px !important;
+    }
+</style>
+
+<body style="background-color: #00000F;">
+    <div class="container1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Super Star</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#socialmedia">Social Media</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="anggota23-24">
+            <div class="d-flex justify-content-evenly">
+                <div class="A-23">
+                    <a href="#2023"><button type="button" class="btn btn-outline-warning">ANGGOTA
+                            2023</button></a>
+                </div>
+                <div class="A-24">
+                    <a href="#2024"><button type="button" class="btn btn-outline-warning">ANGGOTA 2024</button></a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center A-F">
+                <a href="/anggota/Anggota.html"><button type="button" class="btn btn-outline-warning">FULL
+                        ANGGOTA</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/asset/Anggota2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/Anggota3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/Anggota5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+        <div class="card card-info" id="about">
+            <div class="card-header">
+                SUPER STAR
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">KAPAN DAN MENGAPA TIM SUPERSTAR TERCIPTA?</h5>
+                <p class="card-text">Super Star tercipta pada tanggal <br> | 5 September 2022 |. Karena Tim Super Star
+                    bukan
+                    sekadar kumpulan bintang, melainkan sinergi kekompakan, kepercayaan, dan kerja keras bersama.
+                    Mereka menciptakan keajaiban saat setiap individu bersinar, membentuk simfoni keberhasilan yang
+                    tak terlupakan.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+        <div class="card card-info2">
+            <div class="card-header">
+                SUPER STAR
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">APA ARTI DARI SUPER STAR?</h5>
+                <p class="card-text">Super Star
+                    dance performance is a shining example of what can be achieved when we work together in harmony
+                    and with passion.
+                    <br>
+                    Super Star
+                    adalah contoh cemerlang tentang apa yang dapat dicapai jika kita bekerja sama secara harmonis
+                    dan penuh semangat.
+                </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/asset/newmember3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/newmember2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/asset/newmember1.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center" data-aos="fade-up" id="2023">
+        <div class="card card-angkatan-23" style="width: 12rem;">
+            <div class="card-header card-header-1">
+                DAFTAR ANGGOTA <br> SUPER STAR ANGKATAN 2022-2023
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+        <table class="table table-1">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">NAMA</th>
+                    <th scope="col">SEKOLAH</th>
+                    <th scope="col">INSTAGRAM</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Harizallim</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/harizallim967/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jessica</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/jejessicaa.__/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Fergo</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/fergozhang15/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Ferdy</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/ferdy_ind/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Roger</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/roger.fed3rer/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Jennyfer</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/jennyfer.zhang/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Ofiyanti</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/aching_guo_opii/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Gosinta</td>
+                    <td>Sma Negeri 1 Singkep</td>
+                    <td><a href="https://www.instagram.com/gosintaa_/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Mudra</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/mprjn119/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Floren</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/flrencyaa/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Vincent</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/vincentt.20/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Nicky</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/nicky.chen_31/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Kesya</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/kesyanatashaa/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="d-flex justify-content-center" data-aos="fade-up" id="2024">
+        <div class="card card-angkatan-24" style="width: 12rem;">
+            <div class="card-header card-header-2">
+                DAFTAR ANGGOTA <br> SUPER STAR ANGKATAN 2023-2024
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center" data-aos="fade-up">
+        <table class="table table-2">
+            <thead class="thead">
+                <tr>
+                    <th scope="col">NO</th>
+                    <th scope="col">NAMA</th>
+                    <th scope="col">SEKOLAH</th>
+                    <th scope="col">INSTAGRAM</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Veni</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/veenilestarii/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Fiona</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/fionaanggelia_/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Devingel</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/devingel_viomeitha/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Felicia</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/luvrfelsya/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Clarita</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/claritaa_taa/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Liwina</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/xxlwiii/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Niko</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/niko.s018/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Dewaty</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/dewatyy/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>Diana</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/lvy_dy7/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>Oktaviana</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/okayu_liweng13/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">11</th>
+                    <td>Monika</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/monikaaa12/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">12</th>
+                    <td>Chelsea</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/chelseam.p.k/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">13</th>
+                    <td>Ceciliya</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/cclychennn__/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">14</th>
+                    <td>Junaidi</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/jun___je/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">15</th>
+                    <td>Nelson</td>
+                    <td>Sma Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/so_nnnn0/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">16</th>
+                    <td>Mila</td>
+                    <td>Sma Negeri 1 Singkep</td>
+                    <td><a href="https://www.instagram.com/chen_mila4581/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">17</th>
+                    <td>Julia</td>
+                    <td>Smp Negeri 1 Singkep</td>
+                    <td><a href="https://www.instagram.com/juliaayaaa_/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">18</th>
+                    <td>Willy</td>
+                    <td>Smp Negeri 2 Singkep</td>
+                    <td><a href="https://www.instagram.com/willyandiwu79/"><button type="button"
+                                class="btn btn-outline-dark btn-1">INSTAGRAM</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="https://www.instagram.com/superstar22_23?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            id="socialmedia"><button type="button" class="btn btn-outline-warning instagram">INSTAGRAM</button></a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Super Star. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

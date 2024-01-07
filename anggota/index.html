@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggota | Super Star</title>
+    <link rel="stylesheet" href="/style/anggota.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/asset/Logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    .nav-link {
+        color: #f4c530 !important;
+        font-family: "Nunito", sans-serif !important;
+    }
+
+    .nav-item {
+        text-align: center !important;
+    }
+
+    .navbar-brand {
+        color: #f4c530 !important;
+        font-weight: 900 !important;
+        margin-top: -1.5% !important;
+        font-size: 30px !important;
+        font-family: "Ubuntu", sans-serif !important;
+        letter-spacing: 1.5px !important;
+        margin-left: 5% !important;
+    }
+
+    .navbar-collapse {
+        margin-left: 66% !important;
+        margin-top: -5px !important;
+    }
+
+    .navbar-collapse .nav-link {
+        padding: 30px !important;
+        font-size: 17px !important;
+    }
+
+    .navbar-toggler {
+        background-color: whitesmoke !important;
+    }
+
+    .fergo-body {
+        margin-top: 5% !important;
+        margin-left: 16% !important;
+    }
+
+    .fergo-body img {
+        border-radius: 5px !important;
+    }
+
+    .fergo-btn {
+        z-index: 9999 !important;
+        margin-top: 5px !important;
+        background-color: transparent !important;
+        border: 2px solid #f4c530 !important;
+    }
+
+    .fergo-header {
+        margin-left: 17% !important;
+    }
+
+    .fergo-text {
+        width: 50%;
+        margin-left: 15%;
+        font-family: "Ubuntu", sans-serif !important;
+    }
+
+    .coach {
+        width: 230px;
+        border: 3px solid #f4c530;
+        border-radius: 25px !important;
+        box-shadow: 0 0 5px white !important;
+    }
+
+    .asisten {
+        width: 230px;
+        border: 3px solid #f4c530;
+        border-radius: 15px !important;
+        margin-top: 90px !important;
+        box-shadow: 0 0 5px white !important;
+    }
+
+    .img-fergo img {
+        margin-top: 10px !important;
+    }
+
+    .img-liwe img {
+        margin-top: 10px !important;
+    }
+
+    .img-vingel img {
+        margin-top: 62px !important;
+    }
+
+    .img-acen img {
+        margin-top: 90px !important;
+    }
+
+    .toggle-fergo-liwe {
+        position: absolute !important;
+        margin-top: 10px;
+    }
+
+    .btn-fergo-liwe {
+        background-color: transparent !important;
+        border: 3px solid #f4c530 !important;
+        font-size: 15px !important;
+        font-family: "Ubuntu", sans-serif !important;
+    }
+
+    .btn-fergo-liwe:hover {
+        background-color: #f4c530 !important;
+        font-weight: 700 !important;
+        border: 3px solid white !important;
+    }
+
+    .text-fergo-liwe {
+        margin-top: 80px !important;
+        font-family: "Ubuntu", sans-serif !important;
+    }
+
+    .crd-fergo {
+        font-size: 12px !important;
+    }
+
+    .crd-liwe {
+        font-size: 12px !important;
+    }
+
+    .btn-fergo-liwe-ig {
+        background-color: transparent !important;
+        border: 3px solid #f4c530 !important;
+        font-weight: 600 !important;
+    }
+
+    .btn-anggota-ig {
+        background-color: transparent !important;
+        border: 3px solid #f4c530 !important;
+        font-weight: 600 !important;
+        color: black !important;
+        width: 140px;
+        margin-left: -7px !important;
+    }
+
+    .toggle-acen {
+        position: absolute !important;
+    }
+
+    .btn-acen {
+        margin-top: 10px !important;
+        background-color: transparent !important;
+        border: 3px solid #f4c530 !important;
+        font-size: 15px !important;
+        font-family: "Ubuntu", sans-serif !important;
+    }
+
+    .text-acen {
+        margin-top: 80px !important;
+        font-size: 12px !important;
+        font-family: "Ubuntu", sans-serif !important;
+        border: 5px solid #f4c530 !important;
+    }
+
+    .asisten-text {
+        color: #f4c530;
+    }
+
+    .anggota-body {
+        font-size: 10px !important;
+        font-family: "Ubuntu", sans-serif !important;
+        text-align: center !important;
+    }
+
+    .anggota-text {
+        color: #f4c530 !important;
+        font-weight: 600 !important;
+    }
+
+    .anggota-full {
+        margin-top: 70px !important;
+        margin-left: -79px !important;
+        font-family: "Ubuntu", sans-serif !important;
+        font-weight: 900 !important;
+    }
+
+    .header-anggota {
+        padding: 23px !important;
+    }
+
+    .anggota-full-2 {
+        margin-top: -90px !important;
+        font-size: 10px !important;
+    }
+
+    .card-anggota {
+        border: 3px solid #f4c530 !important;
+        box-shadow: 0 0 6px grey;
+    }
+
+    .btn-anggota-ig:hover {
+        background-color: #f4c530 !important;
+        border: 3px solid #00000f !important;
+    }
+
+    .btn-fergo-liwe-ig:hover {
+        background-color: #f4c530 !important;
+        border: 3px solid #00000f !important;
+    }
+
+    footer {
+        font-family: 'Ubuntu', sans-serif !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 29px;
+    }
+</style>
+
+<body style="background-color: #00000F;">
+    <div class="container1">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Super Star</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/Home.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="d-flex justify-content-center">
+            <div class="container overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col img-fergo">
+                        <img src="/asset/fergo.jpg" class="rounded coach" alt="...">
+                    </div>
+                    <div class="col img-liwe">
+                        <img src="/asset/tanda-tanya.jpg" class="rounded coach" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <p class="d-inline-flex gap-1 toggle-fergo-liwe">
+                <button class="btn btn-primary btn-fergo-liwe rounded-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".multi-collapse" aria-expanded="false"
+                    aria-controls="multiCollapseExample1 multiCollapseExample2">COACH <br> |
+                    2022-2023 | - | 2023-2024 |</button>
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse text-fergo-liwe" id="multiCollapseExample1">
+                        <div class="card card-body  crd-fergo">
+                            Nama: <span class="anggota-text">Fergo Zhang</span>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/fergozhang15/"><button type="button"
+                                    class="btn btn-warning btn-fergo-liwe-ig">INSTAGRAM</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse text-fergo-liwe" id="multiCollapseExample2">
+                        <div class="card card-body crd-liwe">
+                            Nama: <span class="anggota-text">*****</span>
+                            Angkatan: <span class="anggota-text">|****-****|</span> <br>
+                            Information:
+                            <a href="#"><button type="button"
+                                    class="btn btn-warning btn btn-fergo-liwe-ig">----</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="container overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col img-acen">
+                        <img src="/asset/tanda-tanya.jpg" class="rounded asisten" alt="...">
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <p class="d-inline-flex gap-1 toggle-acen">
+                            <a class="btn btn-primary btn-acen" data-bs-toggle="collapse" href="#collapseExample"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                ASISTEN 1
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="d-flex justify-content-center">
+                                <div class="card card-body text-acen">
+                                    Nama: <span class="asisten-text">*****</span>
+                                    Angkatan: <span class="asisten-text">|****-****|</span> <br>
+                                    Information:
+                                    <a href="#"><button type="button"
+                                            class="btn btn-warning btn-fergo-liwe-ig">----</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="container overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col img-vingel">
+                        <img src="/asset/tanda-tanya.jpg" class="rounded asisten" alt="...">
+                    </div>
+                    <div class="d-flex justify-content-center ">
+                        <p class="d-inline-flex gap-1 toggle-acen">
+                            <a class="btn btn-primary btn-acen" data-bs-toggle="collapse" href="#collapseExample"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                ASISTEN 2
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="d-flex justify-content-center">
+                                <div class="card card-body text-acen">
+                                    Nama: <span class="asisten-text">*****</span>
+                                    Angkatan: <span class="asisten-text">|****-****|</span> <br>
+                                    Information:
+                                    <a href="#"><button type="button"
+                                            class="btn btn-warning btn-fergo-liwe-ig">----</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT ANGGOTA FULL START -->
+        <div class="d-flex justify-content-center">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/dewaty.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Dewaty</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/dewatyy/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/kesya.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Kesya Natasya</span>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/kesyanatashaa/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/floren.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Floren</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/rennnoyenn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/ofiyanti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Ofiyanti</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/aching_guo_opii/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/jennyfer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Jennyfer</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/jennyfer.zhang/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/willy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Willyandi Wu</span>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/willyandiwu79/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/veni.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Veni Lestari</span>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/veenilestarii/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/fiona.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Fiona Angelia</span>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/fionaanggelia_/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/diana.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Diana</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/lvy_dy7/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/ferdy.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Ferdy Indera Putra</span>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/ferdy_ind/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/harizallim.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Harizallim</span>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/harizallim967/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/nicky.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Nicky</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/nicky.chen_31/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/clarita.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Clarita</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/claritaa_taa/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/mila.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Mila</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/chen_mila4581/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/mudra.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Mudra Prajna P.</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/mprjn119/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/sinta.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Gosinta</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/gosintaa_/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/jessica.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Jessica</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/jejessicaa.__/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/julia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Julia</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/juliaayaaa_/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/vincent.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Vincent</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/vincentt.20/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/niko.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Niko</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/niko.s018/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/nelson.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Nelson</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/so_nnnn0/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/monika.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Monika</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/monikaaa12/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/roger.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Roger</span> <br>
+                            Angkatan: <span class="anggota-text">|2022-2023|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/roger.fed3rer/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/chelsea.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Chelsea</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/chelseam.p.k/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/junaidi.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Junaidi</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/jun___je/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/felicia.JPG" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Felicia</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/luvrfelsya/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/ceciliya2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Ceciliya Chen</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/cclychennn__/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/devingel2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Devingel Viomeitha</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/devingel_viomeitha/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center anggota-full-2">
+            <div class="row justify-content-evenly anggota-full">
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota" style="width: 10rem;">
+                        <img src="/asset/liwina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Liwina</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/xxlwiii/"
+                                class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 header-anggota">
+                    <div class="card card-anggota columns-4" style="width: 10rem;">
+                        <img src="/asset/oktaviana2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body anggota-body">
+                            Nama: <span class="anggota-text">Oktaviana S. P.</span> <br>
+                            Angkatan: <span class="anggota-text">|2023-2024|</span> <br>
+                            Information:
+                            <a href="https://www.instagram.com/okayu_liweng13/" class="btn btn-primary btn-anggota-ig">INSTAGRAM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- CONTENT ANGGOTA FULL END -->
+
+        <footer>
+            <p>&copy; 2024 Super Star. Hak Cipta Dilindungi.</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>
